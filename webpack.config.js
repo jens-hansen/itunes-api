@@ -1,9 +1,11 @@
+const webpack = require('webpack');
+
 module.exports = {
     entry: './src/itunes-api.js',
     devtool: 'source-map',
     output: {
         path: __dirname + '/lib',
-        filename: 'itunes-api.js',
+        filename: 'itunes-api.min.js',
         library: 'iTunesApi',
         libraryTarget: "umd",
     },
@@ -20,6 +22,9 @@ module.exports = {
             root: 'axios'
         }
     },
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin()
+    ],
     node: {
         net: 'empty',
         tls: 'empty',
