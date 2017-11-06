@@ -12,6 +12,14 @@ module.exports = {
             { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
         ]
     },
+    externals: {
+        axios: {
+            commonjs: 'axios',
+            commonjs2: 'axios',
+            amd: 'axios',
+            root: 'axios'
+        }
+    },
     node: {
         net: 'empty',
         tls: 'empty',
