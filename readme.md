@@ -15,6 +15,7 @@ const iTunesHelper = require('itunes-helper');
 
 In Webbrowser:
 ```html
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://unpkg.com/itunes-helper/lib/itunes-helper.min.js"></script>
 ```
 
