@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "yarn build",
-    "build": "webpack --watch",
+    "build": "webpack",
     "test": "jest",
     "test:watch": "jest --watchAll"
   },
