@@ -1,4 +1,5 @@
 # iTunes-Helper
+[![Build Status](https://travis-ci.org/jens-hansen/itunes-api.svg?branch=master)](https://travis-ci.org/jens-hansen/itunes-api)
 
 Simplifies usage of the iTunes Api.
 
