@@ -1,4 +1,8 @@
-import { makeSearchEncodedPair, onlyAvailableParameterKeys, replaceSpaces } from './functions';
+import {
+    makeSearchEncodedPair,
+    onlyAvailableParameterKeys,
+    replaceSpaces
+} from './functions';
 
 test('onlyAvailableParameterKeys returns only allowed values in array', () => {
     const availableParameterKeys = ['key1', 'key2'];

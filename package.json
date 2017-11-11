@@ -5,13 +5,14 @@
   "description": "Library to simplify using the iTunes API.",
   "author": "Jens Hansen <jens@jenshansen.org> (http://www.jenshansen.org)",
   "license": "MIT",
+  "typings": "./index.d.ts",
   "scripts": {
     "start": "yarn build",
-    "build": "webpack -w",
+    "build": "webpack --watch",
     "test": "jest",
     "test:watch": "jest --watchAll"
   },
-  "dependencies": {
+  "peerDependencies": {
     "axios": "^0.17.0"
   },
   "devDependencies": {

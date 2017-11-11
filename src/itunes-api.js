@@ -1,13 +1,13 @@
 import axios from 'axios';
 import {
+    lookup as availableLookup,
     search as availableSearch,
-    lookup as availableLookup
 } from './parameterKeys.json';
 import {
     makeSearchEncodedPair,
     replaceSpaces,
     onlyAvailableParameterKeys
-} from "./functions";
+} from './functions';
 
 const buildQueryString = (searchParams, availableKeys) => {
     const searchPair = makeSearchEncodedPair(searchParams);
@@ -20,12 +20,14 @@ const buildQueryString = (searchParams, availableKeys) => {
       .join('&');
 };
 
-export const iTunesSearch = searchParams => {
+export const search = searchParams => {
     const queryString = buildQueryString(searchParams, availableSearch);
-    return axios.get(`https://itunes.apple.com/search?${queryString}`);
+    return axios.get(`https://itunes.apple.com/search?${queryString}`)
+      .then(res => res.data);
 };
 
-export const iTunesLookup = searchParams => {
+export const lookup = searchParams => {
     const queryString = buildQueryString(searchParams, availableLookup);
-    return axios.get(`https://itunes.apple.com/lookup?${queryString}`);
+    return axios.get(`https://itunes.apple.com/lookup?${queryString}`)
+      .then(res => res.data);
 };

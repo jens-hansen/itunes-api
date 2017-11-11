@@ -7,7 +7,8 @@ module.exports = {
         path: __dirname + '/lib',
         filename: 'itunes-api.min.js',
         library: 'iTunesApi',
-        libraryTarget: "umd",
+        libraryTarget: 'umd',
+        umdNamedDefine: true,
     },
     module: {
         rules: [
@@ -23,7 +24,7 @@ module.exports = {
         }
     },
     plugins: [
-        new webpack.optimize.UglifyJsPlugin()
+        // new webpack.optimize.UglifyJsPlugin()
     ],
     node: {
         net: 'empty',
