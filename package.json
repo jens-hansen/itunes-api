@@ -1,6 +1,6 @@
 {
   "name": "itunes-helper",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "description": "Library to simplify using the iTunes API.",
   "author": "Jens Hansen <jens@jenshansen.org> (http://www.jenshansen.org)",

@@ -2,6 +2,7 @@ src
 .babelrc
 .gitignore
 webpack.*.js
+.idea
 
 # Created by .ignore support plugin (hsz.mobi)
 ### Node template
