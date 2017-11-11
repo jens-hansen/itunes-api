@@ -5,8 +5,8 @@ module.exports = {
     devtool: 'source-map',
     output: {
         path: __dirname + '/lib',
-        filename: 'itunes-api.min.js',
-        library: 'iTunesApi',
+        filename: 'itunes-helper.min.js',
+        library: 'iTunesHelper',
         libraryTarget: 'umd',
         umdNamedDefine: true,
     },
@@ -24,7 +24,7 @@ module.exports = {
         }
     },
     plugins: [
-        // new webpack.optimize.UglifyJsPlugin()
+        new webpack.optimize.UglifyJsPlugin()
     ],
     node: {
         net: 'empty',

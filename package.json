@@ -1,11 +1,15 @@
 {
-  "name": "itunes-api",
-  "version": "1.0.0",
+  "name": "itunes-helper",
+  "version": "1.0.1",
   "main": "index.js",
   "description": "Library to simplify using the iTunes API.",
   "author": "Jens Hansen <jens@jenshansen.org> (http://www.jenshansen.org)",
   "license": "MIT",
   "typings": "./index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jens-hansen/itunes-api"
+  },
   "scripts": {
     "start": "yarn build",
     "build": "webpack --watch",
