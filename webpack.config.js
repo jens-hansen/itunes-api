@@ -1,6 +1,5 @@
-const webpack = require('webpack');
-
 module.exports = {
+    mode: 'production',
     entry: './src/itunes-api.js',
     devtool: 'source-map',
     output: {
@@ -9,23 +8,21 @@ module.exports = {
         library: 'iTunesHelper',
         libraryTarget: 'umd',
         umdNamedDefine: true,
+        globalObject: 'this',
     },
     module: {
         rules: [
-            { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
-        ]
+            { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
+        ],
     },
     externals: {
         axios: {
             commonjs: 'axios',
             commonjs2: 'axios',
             amd: 'axios',
-            root: 'axios'
-        }
+            root: 'axios',
+        },
     },
-    plugins: [
-        new webpack.optimize.UglifyJsPlugin()
-    ],
     node: {
         net: 'empty',
         tls: 'empty',
@@ -33,5 +30,5 @@ module.exports = {
         fs: 'empty',
         child_process: 'empty',
         process: false,
-    }
-};
+    },
+}

@@ -1,26 +1,26 @@
 {
- "search": [
-   "term",
-   "country",
-   "media",
-   "entity",
-   "attribute",
-   "callback",
-   "limit",
-   "lang",
-   "version",
-   "explicit"
- ],
-  "lookup": [
-    "id",
-    "amgArtistId",
-    "amgAlbumId",
-    "amgVideoId",
-    "isbn",
-    "entity",
-    "limit",
-    "sort",
-    "upc",
-    "country"
-  ]
+    "search": [
+        "term",
+        "country",
+        "media",
+        "entity",
+        "attribute",
+        "callback",
+        "limit",
+        "lang",
+        "version",
+        "explicit"
+    ],
+    "lookup": [
+        "id",
+        "amgArtistId",
+        "amgAlbumId",
+        "amgVideoId",
+        "isbn",
+        "entity",
+        "limit",
+        "sort",
+        "upc",
+        "country"
+    ]
 }

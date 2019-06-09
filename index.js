@@ -1,1 +1,1 @@
-module.exports = require('./lib/itunes-helper.min');
+module.exports = require('./lib/itunes-helper.min')

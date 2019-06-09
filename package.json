@@ -1,35 +1,38 @@
 {
-  "name": "itunes-helper",
-  "version": "1.0.4",
-  "main": "index.js",
-  "description": "Library to simplify using the iTunes API.",
-  "author": "Jens Hansen <jens@jenshansen.org> (http://www.jenshansen.org)",
-  "license": "MIT",
-  "typings": "./index.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jens-hansen/itunes-api"
-  },
-  "scripts": {
-    "start": "yarn build",
-    "build": "webpack",
-    "test": "jest",
-    "test:watch": "jest --watchAll"
-  },
-  "dependencies": {
-    "axios": "^0.17.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-jest": "^21.2.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
-    "jest": "^21.2.1",
-    "webpack": "^3.8.1"
-  },
-  "jest": {
-    "transform": {
-      "^.+\\.jsx?$": "babel-jest"
+    "name": "itunes-helper",
+    "version": "1.0.5",
+    "main": "index.js",
+    "description": "Library to simplify using the iTunes API.",
+    "author": "Jens Hansen <jens@jenshansen.org> (http://www.jenshansen.org)",
+    "license": "MIT",
+    "typings": "./index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jens-hansen/itunes-api"
+    },
+    "scripts": {
+        "start": "yarn build",
+        "build": "webpack",
+        "test": "jest",
+        "test:watch": "jest --watchAll"
+    },
+    "dependencies": {
+        "axios": "^0.19.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.4.4",
+        "@babel/core": "^7.4.5",
+        "@babel/preset-env": "^7.4.5",
+        "babel-jest": "^24.8.0",
+        "babel-loader": "^8.0.6",
+        "jest": "^24.8.0",
+        "prettier": "1.18.2",
+        "webpack": "^4.33.0",
+        "webpack-cli": "^3.3.3"
+    },
+    "jest": {
+        "transform": {
+            "^.+\\.jsx?$": "babel-jest"
+        }
     }
-  }
 }
